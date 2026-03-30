@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A one-day design challenge: campaign screen for a time-limited in-game event. By Nguyen Quang Minh."
+    />
+    <title>Campaign Screen - Small Project 01 | Minh Nguyen</title>
+
+    <!-- Strict Typography Pair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&amp;family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <!-- ── NAV (Identical mapping to uiuxshowcase) ── -->
+    <nav>
+      <a href="uiuxshowcase.html" class="nav-logo">Minh Nguyen</a>
+      <ul class="nav-links">
+        <li><a href="uiuxshowcase.html#work" data-i18n="nav.work">Work</a></li>
+        <li>
+          <a href="uiuxshowcase.html#about" data-i18n="nav.about">About</a>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-btn" id="langBtn" aria-label="Switch language">
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <circle
+              cx="7"
+              cy="7"
+              r="6"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+            <path
+              d="M7 1c-2 2-2 8 0 12M7 1c2 2 2 8 0 12M1 7h12"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+          </svg>
+          <span id="langLabel">VI</span>
+        </button>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <button class="nav-btn" id="themeBtn" aria-label="Switch theme">
+          <svg
+            id="iconSun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+            />
+          </svg>
+          <svg
+            id="iconMoon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="proj-hero">
+      <div class="container">
+        <div class="proj-hero-inner">
+          <div class="proj-hero-left">
+            <a
+              href="uiuxshowcase.html#work"
+              class="proj-back"
+              style="margin-bottom: 2.5rem"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 14 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 7H2M7 12L2 7l5-5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              All work
+            </a>
+
+            <p class="proj-eyebrow">
+              <span class="lang-en">Small Project 01 - Mobile Design</span>
+              <span class="lang-vi">Dự án nhỏ 01 - Thiết kế Mobile</span>
+            </p>
+            <h1 class="proj-title">
+              <span class="lang-en">A one-day design<br /><em>challenge</em></span>
+              <span class="lang-vi">Thử thách thiết kế<br /><em>trong một ngày</em></span>
+            </h1>
+
+            <div class="proj-meta">
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Role</span>
+                  <span class="lang-vi">Vai trò</span>
+                </p>
+                <p class="proj-meta-value">
+                  <span class="lang-en">Solo Designer</span>
+                  <span class="lang-vi">Thiết kế độc lập</span>
+                </p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Timeline</span>
+                  <span class="lang-vi">Thời gian</span>
+                </p>
+                <p class="proj-meta-value">
+                  <span class="lang-en">1 Day</span>
+                  <span class="lang-vi">1 ngày</span>
+                </p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Tools</span>
+                  <span class="lang-vi">Công cụ</span>
+                </p>
+                <p class="proj-meta-value">Figma</p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Deliverables</span>
+                  <span class="lang-vi">Sản phẩm bàn giao</span>
+                </p>
+                <p class="proj-meta-value">
+                  <span class="lang-en">UI Design, Tokens, Components</span>
+                  <span class="lang-vi">UI Design, Token, Component</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-hero-right">
+            <img
+              src="img/small project 1/Screen 1.1.png"
+              alt="Campaign screen overview"
+              class="fade-up"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── OVERVIEW ── -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Overview</span>
+            <span class="lang-vi">Tổng quan</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">This one came from a Facebook group.</span>
+              <span class="lang-vi">Cái này bắt nguồn từ một nhóm Facebook.</span>
+            </h2>
+            <p>
+              <span class="lang-en">The prompt was simple: design a campaign screen for a time-limited in-game event. Everything from scratch. Solo. One day.</span>
+              <span class="lang-vi">Yêu cầu rất rõ ràng: thiết kế màn hình chiến dịch cho một sự kiện trong game có giới hạn thời gian. Tất cả từ đầu. Một mình. Một ngày.</span>
+            </p>
+            <p>
+              <span class="lang-en">Campaign screens live or die by their states. Before touching Figma, I mapped out what the screen actually needs to communicate depending on who is looking at it and when. Getting that logic right first saved a lot of rework later.</span>
+              <span class="lang-vi">Màn hình chiến dịch sống hay chết dựa vào các trạng thái của nó. Trước khi mở Figma, tôi vạch ra những gì màn hình cần truyền đạt tùy thuộc vao ai đang xem và khi nào. Xác định đúng logic trước tiên giúp tiết kiệm nhiều công sửa về sau.</span>
+            </p>
+            <blockquote class="pull-quote">
+              <span class="lang-en">Getting the logic right first saved a lot of rework later.</span>
+              <span class="lang-vi">Xác định đúng logic trước tiên giúp tiết kiệm nhiều công sửa về sau.</span>
+            </blockquote>
+            <p>
+              <span class="lang-en">The flow ended up covering five states. Each one has a distinct CTA and a clear visual hierarchy so the user always knows exactly where they stand.</span>
+              <span class="lang-vi">Luồng cuối cùng xử lý năm trạng thái. Mỗi trạng thái có một CTA riêng biệt và phân cấp hình ảnh rõ ràng để người dùng luôn biết chính xác vị trí của mình.</span>
+            </p>
+            <div class="state-pills">
+              <span class="pill pill-gold">Eligible</span>
+              <span class="pill pill-green">Claimable</span>
+              <span class="pill pill-muted">Claimed</span>
+              <span class="pill pill-red">Expired</span>
+              <span class="pill pill-red" style="opacity: 0.65"
+                >Not Eligible</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ── FLOW DIAGRAM  ── -->
+    <div class="container">
+      <div class="proj-img-block">
+        <div class="proj-row" style="margin-bottom: 2rem">
+          <span class="proj-row-label" style="position: static">
+            <span class="lang-en">State flow diagram</span>
+            <span class="lang-vi">Sơ đồ luồng trạng thái</span>
+          </span>
+          <p style="font-size: 0.95rem; color: var(--fg-muted); line-height: 1.7; max-width: 44ch;">
+            <span class="lang-en">Every branch mapped before opening Figma. Five decision points, five outcomes.</span>
+            <span class="lang-vi">Mọi nhánh đều được vạch ra trước khi mở Figma. Năm điểm quyết định, năm kết quả.</span>
+          </p>
+        </div>
+        <div class="img-frame img-frame--dark fade-up">
+          <img
+            src="img/small project 1/Game App - Campaign - Flow.png"
+            alt="Decision tree covering all five campaign states"
+          />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Mapping every decision before touching Figma.</span>
+          <span class="lang-vi">Phác thảo mọi quyết định trước khi mở Figma.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ── FIVE STATES ── -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Five States</span>
+            <span class="lang-vi">Năm Trạng thái</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">One screen. Five contexts.</span>
+              <span class="lang-vi">Một màn hình. Năm ngữ cảnh.</span>
+            </h2>
+            <p>
+              <span class="lang-en">Each state gets its own CTA and clearly telegraphs the user's situation at a glance. Colour, label, and button weight all change together — no single cue carries the load alone.</span>
+              <span class="lang-vi">Mỗi trạng thái có CTA riêng và truyền đạt rõ ràng tình huống người dùng ngay từ cái nhìn đầu. Màu sắc, nhãn và độ của nút thay đổi đồng bộ — không một tín hiệu nào phải độc lập giao tiếp.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="states-grid fade-up">
+          <div class="state-card">
+            <img
+              class="zoomable"
+              src="img/small project 1/Screen 1.2 (Eligible).png"
+              alt="Eligible state"
+            />
+            <span class="state-card-label">
+              <span class="lang-en">Eligible</span>
+              <span class="lang-vi">Đủ điều kiện</span>
+            </span>
+          </div>
+          <div class="state-card">
+            <img class="zoomable" src="img/small project 1/Screen 1.2 (Claimable).png" alt="Claimable state" />
+            <span class="state-card-label">
+              <span class="lang-en">Claimable</span>
+              <span class="lang-vi">Có thể nhận</span>
+            </span>
+          </div>
+          <div class="state-card">
+            <img class="zoomable" src="img/small project 1/Screen 1.2 (Claimed).png" alt="Claimed state" />
+            <span class="state-card-label">
+              <span class="lang-en">Claimed</span>
+              <span class="lang-vi">Đã nhận</span>
+            </span>
+          </div>
+          <div class="state-card">
+            <img class="zoomable" src="img/small project 1/Screen 1.2 (Expired).png" alt="Expired state" />
+            <span class="state-card-label">
+              <span class="lang-en">Expired</span>
+              <span class="lang-vi">Đã hết hạn</span>
+            </span>
+          </div>
+          <div class="state-card">
+            <img class="zoomable" src="img/small project 1/Screen 1.2 (Not Eligible).png" alt="Not Eligible state" />
+            <span class="state-card-label">
+              <span class="lang-en">Not Eligible</span>
+              <span class="lang-vi">Không đủ điều kiện</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ── VISUAL LANGUAGE ── -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Visual Language</span>
+            <span class="lang-vi">Ngôn ngữ Hình ảnh</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Color built around <em>function</em>, not decoration.</span>
+              <span class="lang-vi">Màu sắc xây dựng theo <em>chức năng</em>, không phải trang trí.</span>
+            </h2>
+            <p>
+              <span class="lang-en">The color system was defined upfront as design tokens before a single component was built. Each hue serves exactly one job.</span>
+              <span class="lang-vi">Hệ thống màu được xác định trước dưới dạng design token trước khi xây dựng bất kỳ câu phần nào. Mỗi màu chỉ đảm nhiệm đúng một nhiệm vụ.</span>
+            </p>
+            <div class="token-list">
+              <div class="token-item">
+                <div class="token-swatch" style="background: #f5a623"></div>
+                <span>
+                  <span class="lang-en">Gold — progress &amp; eligible states</span>
+                  <span class="lang-vi">Vàng — tiến độ &amp; trạng thái đủ điều kiện</span>
+                </span>
+              </div>
+              <div class="token-item">
+                <div class="token-swatch" style="background: #4caf50"></div>
+                <span>
+                  <span class="lang-en">Green — rewards &amp; completion</span>
+                  <span class="lang-vi">Xanh lá — phần thưởng &amp; hoàn thành</span>
+                </span>
+              </div>
+              <div class="token-item">
+                <div class="token-swatch" style="background: #e05252"></div>
+                <span>
+                  <span class="lang-en">Red — warnings &amp; ineligibility</span>
+                  <span class="lang-vi">Đỏ — cảnh báo &amp; không đủ điều kiện</span>
+                </span>
+              </div>
+              <div class="token-item">
+                <div class="token-swatch" style="background: #838583"></div>
+                <span>
+                  <span class="lang-en">Gray — expired &amp; disabled states</span>
+                  <span class="lang-vi">Xám — hết hạn &amp; bị vô hiệu hóa</span>
+                </span>
+              </div>
+            </div>
+            <p style="margin-top: 2.5rem">
+              <span class="lang-en">A dark layered background keeps the gaming feel without getting in the way of the information. None of these choices were aesthetic first — each was derived from what the user needs to read instantly.</span>
+              <span class="lang-vi">Nền tối nhiều lớp giữ nguyên cảm giác game mà không cản trở thông tin. Không một lựa chọn nào xuất phát từ thẩm mỹ — mỗi cái đều dựa trên những gì người dùng cần đọc ngay lập tức.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ── COMPONENT LIBRARY ── -->
+    <div class="container">
+      <div class="proj-img-block">
+        <div class="proj-row" style="margin-bottom: 2rem">
+          <span class="proj-row-label" style="position: static">
+            <span class="lang-en">Component library</span>
+            <span class="lang-vi">Thư viện Component</span>
+          </span>
+          <p style="font-size: 0.95rem; color: var(--fg-muted); line-height: 1.7; max-width: 44ch;">
+            <span class="lang-en">Tokens → components → screens. Everything assembled before layout work began.</span>
+            <span class="lang-vi">Token → component → màn hình. Tất cả được lắp ráp trước khi bắt đầu làm layout.</span>
+          </p>
+        </div>
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/small project 1/Game App - Campaign - Components.png" alt="Full component library: badges, progress bars, CTAs and card variants" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">All components share the same token set.</span>
+          <span class="lang-vi">Tất cả các component dùng chung một bộ token.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ── TAKEAWAY ── -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Takeaway</span>
+            <span class="lang-vi">Bài học rút ra</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">One day is not a lot of time.</span>
+              <span class="lang-vi">Một ngày không phải là nhiều thời gian.</span>
+            </h2>
+            <div class="takeaway">
+              <p style="margin-bottom: 1rem">
+                <span class="lang-en">But the constraint made every decision easier. If something did not directly help the user understand their situation faster, it did not make the cut.</span>
+                <span class="lang-vi">Nhưng sự giới hạn đó lại giúp mọi quyết định trở nên dễ hơn. Nếu một thứ không trực tiếp giúp người dùng hiểu tình huống của họ nhanh hơn, thì nó bị loại."</span>
+              </p>
+              <p>
+                <span class="lang-en">The flow-first approach was the real unlock. By the time I opened Figma, the hard thinking was already done. Design became execution rather than exploration.</span>
+                <span class="lang-vi">Phương pháp ưu tiên luồng trước mới là chì khóa thực sự. Đến khi mở Figma, phần tư duy khó nhất đã xong rồi. Thiết kế lúc này được thực thi chứ không còn khám phá.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ══════════════════════════════════════════
+         HOW ABOUT ANOTHER?
+    ══════════════════════════════════════════ -->
+    <div class="container">
+      <div class="proj-more">
+        <p class="proj-more-label">
+          <span class="lang-en">HOW ABOUT ANOTHER?</span>
+          <span class="lang-vi">Xem thêm dự án</span>
+        </p>
+        <div class="proj-more-grid">
+          <!-- Card 1: Libeara -->
+          <a href="project_libeara.html" class="proj-more-card fade-up">
+            <div class="proj-more-img">
+              <img
+                src="img/Libeara project/Libeara Thumbnail.png"
+                alt="Libeara"
+              />
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">System Design · 2024</span>
+                <span class="lang-vi">Thiết kế Hệ thống · 2024</span>
+              </span>
+              <span class="proj-more-name">Libeara</span>
+            </div>
+          </a>
+
+          <!-- Card 2: Campaign Screen -->
+          <a
+            href="project_s1.html"
+            class="proj-more-card fade-up"
+            style="transition-delay: 0.08s"
+          >
+            <div class="proj-more-img">
+              <img
+                src="img/small project 1/Project 1 Thumbnail.png"
+                alt="Campaign Screen"
+              />
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Mobile Design · 2023</span>
+                <span class="lang-vi">Thiết kế Mobile · 2023</span>
+              </span>
+              <span class="proj-more-name">
+                <span class="lang-en">Campaign Screen</span>
+                <span class="lang-vi">Màn hình Chiến dịch</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 3: Back to all work -->
+          <a
+            href="uiuxshowcase.html#work"
+            class="proj-more-card proj-more-card--home fade-up"
+            style="transition-delay: 0.16s"
+          >
+            <div class="proj-more-img proj-more-img--home">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Portfolio</span>
+                <span class="lang-vi">Danh mục</span>
+              </span>
+              <span class="proj-more-name">
+                <span class="lang-en">← All Work</span>
+                <span class="lang-vi">← Tất cả dự án</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="container footer-inner">
+        <p class="footer-copy" data-i18n="footer.copy">
+          © 2025 Minh Nguyen. All rights reserved.
+        </p>
+        <ul class="footer-links">
+          <li><a href="mailto:minh.nguyen.workmail01@gmail.com">Email</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/nq-minh-477401239/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

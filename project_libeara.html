@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Libeara - Tokenized asset platform incubated by SC Ventures. Case study by Nguyen Quang Minh."
+    />
+    <title>Libeara - UI/UX Case Study | Minh Nguyen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&amp;family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <!-- ── NAV ── -->
+    <nav>
+      <a href="uiuxshowcase.html" class="nav-logo">Minh Nguyen</a>
+      <ul class="nav-links">
+        <li><a href="uiuxshowcase.html#work" data-i18n="nav.work">Work</a></li>
+        <li><a href="uiuxshowcase.html#about" data-i18n="nav.about">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-btn" id="langBtn" aria-label="Switch language">
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2" />
+            <path d="M7 1c-2 2-2 8 0 12M7 1c2 2 2 8 0 12M1 7h12" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <span id="langLabel">VI</span>
+        </button>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <button class="nav-btn" id="themeBtn" aria-label="Switch theme">
+          <svg id="iconSun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg id="iconMoon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="proj-hero">
+      <div class="container">
+        <div class="proj-hero-inner">
+          <div class="proj-hero-left">
+            <a href="uiuxshowcase.html#work" class="proj-back" style="margin-bottom: 2.5rem">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M12 7H2M7 12L2 7l5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="lang-en">All work</span>
+              <span class="lang-vi">Tất cả dự án</span>
+            </a>
+
+            <p class="proj-eyebrow">
+              <span class="lang-en">Product Design · Fintech · 2024</span>
+              <span class="lang-vi">Thiết kế Sản phẩm · Fintech · 2024</span>
+            </p>
+            <h1 class="proj-title">
+              <span class="lang-en">Design for<br /><em>Libeara</em></span>
+              <span class="lang-vi">Thiết kế cho<br /><em>Libeara</em></span>
+            </h1>
+
+            <div class="proj-meta">
+              <div>
+                <p class="proj-meta-label">Client</p>
+                <p class="proj-meta-value">Libeara / SC Ventures</p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Role</span>
+                  <span class="lang-vi">Vai trò</span>
+                </p>
+                <p class="proj-meta-value">UI/UX Designer</p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Tools</span>
+                  <span class="lang-vi">Công cụ</span>
+                </p>
+                <p class="proj-meta-value">Figma · Ant Design</p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Scope</span>
+                  <span class="lang-vi">Phạm vi</span>
+                </p>
+                <p class="proj-meta-value">
+                  <span class="lang-en">UI Redesign · Admin Portal</span>
+                  <span class="lang-vi">Thiết kế lại UI · Admin Portal</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-hero-right">
+            <img src="img/Libeara project/Libeara Thumbnail.png" alt="Libeara Design System Thumbnail" class="fade-up" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- OVERVIEW -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Overview</span>
+            <span class="lang-vi">Tổng quan</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Tokenized real-world assets.<br />On-chain. <em>Regulated.</em></span>
+              <span class="lang-vi">Tài sản thực được token hóa.<br />Trên blockchain. <em>Tuân thủ pháp lý.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">Libeara—incubated by SC Ventures—is a pioneering platform enabling institutional investors to access tokenized government bonds and fixed-income products on-chain. By bridging blockchain innovation with stringent financial regulations, this redesign streamlined the onboarding ecosystem and established a secure, scalable Admin Portal from zero to one.</span>
+              <span class="lang-vi">Libeara—được ươm tạo bởi SC Ventures—là nền tảng tiên phong giúp các nhà đầu tư tổ chức tiếp cận trái phiếu chính phủ được token hóa và các sản phẩm thu nhập cố định trên blockchain. Bằng cách kết nối đổi mới blockchain với các quy định tài chính nghiêm ngặt, dự án tái thiết kế này đã tối ưu hệ sinh thái onboarding và xây dựng một Admin Portal bảo mật, có khả năng mở rộng từ con số không.</span>
+            </p>
+            <div style="margin-top: 2rem">
+              <h3 style="font-family: var(--sans); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg); margin-bottom: 0.75rem;">
+                <span class="lang-en">Goal</span>
+                <span class="lang-vi">Mục tiêu</span>
+              </h3>
+              <ul style="list-style: disc; padding-left: 1.25rem; color: var(--fg-muted); line-height: 1.7; font-size: 1.05rem; margin-bottom: 2rem;">
+                <li style="margin-bottom: 0.5rem">
+                  <strong><span class="lang-en">Business Goal:</span><span class="lang-vi">Mục tiêu Kinh doanh:</span></strong>
+                  <span class="lang-en">Facilitate frictionless institutional investments in tokenized assets while ensuring 100% compliance with complex regulatory frameworks.</span>
+                  <span class="lang-vi">Tạo điều kiện đầu tư tổ chức mượt mà vào các tài sản được token hóa trong khi đảm bảo tuân thủ 100% các khung pháp lý phức tạp.</span>
+                </li>
+                <li>
+                  <strong><span class="lang-en">User Goal:</span><span class="lang-vi">Mục tiêu Người dùng:</span></strong>
+                  <span class="lang-en">Demystify the on-chain investment process, providing a premium, trustworthy, and intuitive experience for both individual and corporate investors, alongside a robust administrative system for internal staff.</span>
+                  <span class="lang-vi">Giải mã quy trình đầu tư trên blockchain, mang đến trải nghiệm cao cấp, đáng tin cậy và trực quan cho cả nhà đầu tư cá nhân lẫn doanh nghiệp, đi kèm hệ thống quản trị nội bộ vững chắc.</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 style="font-family: var(--sans); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg); margin-bottom: 0.75rem;">
+                <span class="lang-en">The Challenge</span>
+                <span class="lang-vi">Thử thách</span>
+              </h3>
+              <p>
+                <span class="lang-en">Regulated financial environments are inherently complex and typically rely on fragmented, legacy systems. Libeara required a cohesive platform that could handle multi-layered compliance—such as divergent verification paths (individual KYC vs. corporate KYB), whitelist checks, and varying wallet connection states—without overwhelming the end user. Simultaneously, internal operations lacked a centralized, error-proof Admin Portal capable of executing high-stakes transaction management and strict Role-Based Access Control (RBAC).</span>
+                <span class="lang-vi">Môi trường tài chính có quy định pháp lý vốn dĩ rất phức tạp và thường dựa trên các hệ thống cũ kỹ, rời rạc. Libeara cần một nền tảng thống nhất có thể xử lý tuân thủ đa tầng—như các luồng xác minh phân kỳ (KYC cá nhân vs. KYB doanh nghiệp), kiểm tra whitelist và các trạng thái kết nối ví khác nhau—mà không gây choáng ngợp cho người dùng cuối. Đồng thời, hoạt động nội bộ thiếu một Admin Portal tập trung, tránh sai sót, có khả năng thực thi quản lý giao dịch quan trọng và kiểm soát truy cập dựa trên vai trò (RBAC).</span>
+              </p>
+            </div>
+            <div class="state-pills" style="margin-top: 2.5rem">
+              <span class="pill pill-blue">Sign-up Flow</span>
+              <span class="pill pill-blue">Investing Flow</span>
+              <span class="pill pill-amber">Admin Portal</span>
+              <span class="pill pill-muted">
+                <span class="lang-en">Storefront Redesign</span>
+                <span class="lang-vi">Tái thiết kế Storefront</span>
+              </span>
+              <span class="pill pill-muted">KYC · KYB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- RESEARCH & INSIGHTS -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Research &amp; Insights</span>
+            <span class="lang-vi">Nghiên cứu &amp; Nhận thức</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Systematic analysis<br />before drawing <em>anything.</em></span>
+              <span class="lang-vi">Phân tích hệ thống<br />trước khi vẽ <em>bất cứ thứ gì.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">To untangle the domain's complexity, I facilitated cross-functional workshops to map the complete service blueprint—before touching a single screen in Figma.</span>
+              <span class="lang-vi">Để gỡ rối sự phức tạp của lĩnh vực, tôi đã tổ chức các buổi workshop liên chức năng để vạch ra bản đồ dịch vụ hoàn chỉnh—trước khi chạm vào bất kỳ màn hình nào trong Figma.</span>
+            </p>
+            <div class="role-list">
+              <div class="role-item">
+                <div class="role-text">
+                  <strong style="display: block; margin-bottom: 0.25rem">
+                    <span class="lang-en">Diverging Entry Points:</span>
+                    <span class="lang-vi">Điểm vào phân kỳ:</span>
+                  </strong>
+                  <span class="lang-en">Institutional users entered the platform through entirely different channels (LIP login vs. DApp URL), fracturing the experience. <em>Insight:</em> Logic chains for both entry points must be unified into a single, coherent investing flow.</span>
+                  <span class="lang-vi">Người dùng tổ chức truy cập nền tảng qua các kênh hoàn toàn khác nhau (đăng nhập LIP vs. URL DApp), gây đứt gãy trải nghiệm. <em>Nhận thức:</em> Chuỗi logic cho cả hai điểm vào phải được hợp nhất thành một luồng đầu tư duy nhất, có tính nhất quán.</span>
+                </div>
+              </div>
+              <div class="role-item">
+                <div class="role-text">
+                  <strong style="display: block; margin-bottom: 0.25rem">
+                    <span class="lang-en">Friction in Onboarding:</span>
+                    <span class="lang-vi">Ma sát trong Onboarding:</span>
+                  </strong>
+                  <span class="lang-en">Drop-off risks were tied to confusing OTP edge cases and unexpected compliance overlays. <em>Insight:</em> Compliance checks need to be integrated as frictionless, expected milestones rather than abrupt roadblocks.</span>
+                  <span class="lang-vi">Nguy cơ người dùng bỏ cuộc liên quan đến các tình huống OTP gây nhầm lẫn và các màn hình tuân thủ xuất hiện đột ngột. <em>Nhận thức:</em> Các bước kiểm tra tuân thủ cần được tích hợp như những cột mốc mượt mà, có thể đoán trước—thay vì rào cản đột ngột.</span>
+                </div>
+              </div>
+              <div class="role-item">
+                <div class="role-text">
+                  <strong style="display: block; margin-bottom: 0.25rem">
+                    <span class="lang-en">High-Stakes Admin Actions:</span>
+                    <span class="lang-vi">Hành động Quản trị Quan trọng:</span>
+                  </strong>
+                  <span class="lang-en">For internal staff, ambiguity is dangerous. Approving an investor allows them to move money; banning one is irreversible. <em>Insight:</em> The Admin Portal required explicit visual hierarchy and foolproof confirmation mechanisms, prioritizing clarity and data density over aesthetics.</span>
+                  <span class="lang-vi">Với nhân viên nội bộ, sự mơ hồ rất nguy hiểm. Duyệt nhà đầu tư cho phép họ chuyển tiền; cấm họ là hành động không thể đảo ngược. <em>Nhận thức:</em> Admin Portal cần phân cấp hình ảnh rõ ràng và cơ chế xác nhận chống sai sót, ưu tiên sự rõ ràng và mật độ dữ liệu hơn thẩm mỹ.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Planning image -->
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Libeara project/Plan.png" alt="Planning diagram mapping investor types, entry points and admin roles" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">User types · entry points · admin roles — mapped before Figma opened.</span>
+          <span class="lang-vi">Loại người dùng · điểm vào · vai trò admin — được vạch ra trước khi mở Figma.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- SIGN-UP FLOW -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Design Process</span>
+            <span class="lang-vi">Quy trình Thiết kế</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Three distinct profiles.<br /><em>One</em> coherent journey.</span>
+              <span class="lang-vi">Ba hồ sơ người dùng khác nhau.<br /><em>Một</em> hành trình thống nhất.</span>
+            </h2>
+            <p>
+              <span class="lang-en">The transition from raw complexity to a clean, scalable interface required a deeply systematic approach centered on logic, not visuals. I mapped the exact progression for three distinct investor profiles, ensuring that no matter the user's origin, the path to funding was linear and transparent.</span>
+              <span class="lang-vi">Để chuyển hóa sự phức tạp thành giao diện gọn gàng và có khả năng mở rộng, tôi tập trung vào logic trước tiên, không phải hình ảnh. Tôi vạch ra luồng chính xác cho ba hồ sơ nhà đầu tư khác nhau, đảm bảo dù người dùng đến từ đâu, con đường đến việc đầu tư đều tuyến tính và minh bạch.</span>
+            </p>
+            <p>
+              <span class="lang-en">Every label, progress indicator, and error state was crafted to reduce friction for institutional clients making financial decisions on-chain. This included aligning dual KYC/KYB verification paths seamlessly, transforming the onboarding flow into a trustworthy and approachable process.</span>
+              <span class="lang-vi">Mọi nhãn, thanh tiến độ và trạng thái lỗi đều được thiết kế cẩn thận nhằm giảm thiểu ma sát cho các khách hàng tổ chức đưa ra quyết định tài chính trên blockchain. Điều này bao gồm việc kết hợp liền mạch hai luồng xác minh KYC/KYB, biến quy trình onboarding thành một hành trình đáng tin cậy và dễ tiếp cận.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Libeara project/Redesigning Libeara - Sign up flow.png" alt="Libeara sign-up flow screens covering all investor and verification paths" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Sign-up flow · KYC · KYB · OTP · wallet connection · compliance gate.</span>
+          <span class="lang-vi">Luồng đăng ký · KYC · KYB · OTP · kết nối ví · cổng tuân thủ.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- INVESTING FLOWS -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Investing Flow</span>
+            <span class="lang-vi">Luồng Đầu tư</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Two paths in.<br />Same destination. <em>Unified logic.</em></span>
+              <span class="lang-vi">Hai con đường vào.<br />Cùng đích đến. <em>Logic thống nhất.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">Flow 1.1 entered through the LIP login, while Flow 1.2 entered through a DApp URL. By mapping both logic chains side-by-side, it became clear where permissions diverged and where unified patterns could be built.</span>
+              <span class="lang-vi">Luồng 1.1 đi vào qua đăng nhập LIP, trong khi Luồng 1.2 đi vào qua URL DApp. Bằng cách so sánh hai chuỗi logic song song, tôi xác định được nơi phân kỳ về quyền và nơi có thể xây dựng mẫu thống nhất.</span>
+            </p>
+            <p>
+              <span class="lang-en">We established standardized states for whitelist verification, fund selection, and wallet connection—locking down every decision point before scaling the UI.</span>
+              <span class="lang-vi">Chúng tôi thiết lập các trạng thái chuẩn hóa cho xác minh whitelist, chọn quỹ và kết nối ví—cố định từng điểm quyết định trước khi mở rộng giao diện.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="two-up fade-up">
+          <div>
+            <div class="img-frame img-frame--light">
+              <img src="img/Libeara project/Flow 1.1.png" alt="Flow 1.1 - LIP login entry point" />
+            </div>
+            <p class="proj-img-caption">
+              <span class="lang-en">Flow 1.1 — LIP login entry.</span>
+              <span class="lang-vi">Luồng 1.1 — Đăng nhập qua LIP.</span>
+            </p>
+          </div>
+          <div>
+            <div class="img-frame img-frame--light">
+              <img src="img/Libeara project/Flow 1.2.png" alt="Flow 1.2 - DApp URL entry point" />
+            </div>
+            <p class="proj-img-caption">
+              <span class="lang-en">Flow 1.2 — DApp URL entry.</span>
+              <span class="lang-vi">Luồng 1.2 — Truy cập qua URL DApp.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Investing mockup -->
+    <div class="container">
+      <div class="proj-img-block">
+        <div class="proj-row" style="margin-bottom: 2rem">
+          <span class="proj-row-label" style="position: static">
+            <span class="lang-en">Mockup</span>
+            <span class="lang-vi">Bản dựng</span>
+          </span>
+          <p style="font-size: 0.95rem; color: var(--fg-muted); line-height: 1.7; max-width: 44ch;">
+            <span class="lang-en">Fund selection, network selection, wallet connection, whitelist verification. Each state documented. Each edge case handled.</span>
+            <span class="lang-vi">Chọn quỹ, chọn mạng lưới, kết nối ví, xác minh whitelist. Mỗi trạng thái đều được ghi lại. Mỗi tình huống ngoại lệ đều được xử lý.</span>
+          </p>
+        </div>
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Libeara project/Investing Flow + Mockup.png" alt="Investing flow with hi-fi screen mockups" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Hi-fi investing flow — all states accounted for.</span>
+          <span class="lang-vi">Luồng đầu tư hi-fi — tất cả trạng thái đã được xử lý.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- STOREFRONT -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">The Storefront</span>
+            <span class="lang-vi">Mặt tiền Cửa hàng</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Enough information<br />to make a <em>real decision.</em></span>
+              <span class="lang-vi">Đủ thông tin<br />để đưa ra <em>quyết định thực sự.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">For the investor-facing UI, the design centered on providing just enough performance data to drive informed financial decisions without causing cognitive overload.</span>
+              <span class="lang-vi">Với giao diện hướng đến nhà đầu tư, thiết kế tập trung vào việc cung cấp vừa đủ dữ liệu hiệu suất để hỗ trợ quyết định tài chính thông minh mà không gây quá tải nhận thức.</span>
+            </p>
+            <p>
+              <span class="lang-en">I utilized a refined set of design tokens to establish trust and clear hierarchy. The product cards and fund details were designed around one fundamental question: what does this investor need to know, and in what order?</span>
+              <span class="lang-vi">Tôi sử dụng một bộ design token được tinh chỉnh kỹ lưỡng để thiết lập sự tin tưởng và phân cấp thông tin rõ ràng. Các thẻ sản phẩm và chi tiết quỹ được thiết kế xoay quanh một câu hỏi cốt lõi: nhà đầu tư này cần biết gì, và theo thứ tự nào?</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Libeara project/Redesigning Libeara - Storefront.png" alt="Libeara storefront redesign - product cards, fund details, performance data" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Storefront · product cards · fund details · performance data.</span>
+          <span class="lang-vi">Mặt tiền · thẻ sản phẩm · chi tiết quỹ · dữ liệu hiệu suất.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ADMIN PORTAL -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Admin Architecture</span>
+            <span class="lang-vi">Kiến trúc Admin</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">This was the <em>harder</em> problem.</span>
+              <span class="lang-vi">Đây mới là bài toán <em>khó hơn.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">An admin portal for a regulated financial product is not a dashboard where you put some charts and a table. Every action has consequences. I built the admin portal from scratch utilizing scaling components from the Ant Design framework.</span>
+              <span class="lang-vi">Admin portal cho một sản phẩm tài chính có kiểm soát không phải là một bảng điều khiển nơi bạn đặt vài biểu đồ và bảng dữ liệu. Mọi hành động đều có hậu quả. Tôi xây dựng admin portal từ đầu bằng cách sử dụng các thành phần có khả năng mở rộng từ framework Ant Design.</span>
+            </p>
+            <p>
+              <span class="lang-en">By focusing on data-dense tables, clear status indicators (Pending, Approved, Rejected, Banned), and strict RBAC permission visibility, I transformed a chaotic operational pipeline into a secure, predictable management tool. Every deviation from Ant Design was critically justified by specific operational needs.</span>
+              <span class="lang-vi">Bằng cách tập trung vào bảng dữ liệu dày đặc, chỉ báo trạng thái rõ ràng (Đang chờ, Đã duyệt, Bị từ chối, Bị cấm) và khả năng hiển thị quyền RBAC nghiêm ngặt, tôi biến một quy trình vận hành hỗn loạn thành một công cụ quản lý bảo mật, có thể dự đoán. Mọi ngoại lệ so với Ant Design đều được biện minh bởi nhu cầu vận hành cụ thể.</span>
+            </p>
+            <blockquote class="pull-quote">
+              <span class="lang-en">A mistake here has real consequences. Ambiguity is not an option.</span>
+              <span class="lang-vi">Một sai lầm ở đây có hậu quả thực sự. Sự mơ hồ không phải là lựa chọn.</span>
+            </blockquote>
+            <div class="state-pills">
+              <span class="pill pill-amber">
+                <span class="lang-en">Pending</span>
+                <span class="lang-vi">Đang chờ</span>
+              </span>
+              <span class="pill pill-green">
+                <span class="lang-en">Approved</span>
+                <span class="lang-vi">Đã duyệt</span>
+              </span>
+              <span class="pill pill-red">
+                <span class="lang-en">Rejected</span>
+                <span class="lang-vi">Bị từ chối</span>
+              </span>
+              <span class="pill pill-red" style="opacity: 0.6">
+                <span class="lang-en">Banned</span>
+                <span class="lang-vi">Bị cấm</span>
+              </span>
+              <span class="pill pill-muted">RBAC Roles</span>
+              <span class="pill pill-muted">
+                <span class="lang-en">Transaction Mgmt</span>
+                <span class="lang-vi">Quản lý Giao dịch</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin flow diagram -->
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="proj-row" style="margin-bottom: 2rem">
+          <span class="proj-row-label" style="position: static">
+            <span class="lang-en">Flow diagram</span>
+            <span class="lang-vi">Sơ đồ luồng</span>
+          </span>
+          <p style="font-size: 0.95rem; color: var(--fg-muted); line-height: 1.7; max-width: 44ch;">
+            <span class="lang-en">Every admin action mapped — approval pipeline, role permissions, individual vs corporate investor paths.</span>
+            <span class="lang-vi">Mỗi hành động admin đều được vạch ra — quy trình duyệt, quyền vai trò, luồng nhà đầu tư cá nhân vs. doanh nghiệp.</span>
+          </p>
+        </div>
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Libeara project/Admin Portal Flow.png" alt="Admin portal flow diagram - approval pipeline and RBAC" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Admin flow · pending · approved · rejected · banned · RBAC.</span>
+          <span class="lang-vi">Luồng Admin · đang chờ · đã duyệt · bị từ chối · bị cấm · RBAC.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Admin mockup flow -->
+    <div class="container">
+      <div class="proj-img-block">
+        <div class="proj-row" style="margin-bottom: 2rem">
+          <span class="proj-row-label" style="position: static">
+            <span class="lang-en">Mockup flow</span>
+            <span class="lang-vi">Luồng bản dựng</span>
+          </span>
+          <p style="font-size: 0.95rem; color: var(--fg-muted); line-height: 1.7; max-width: 44ch;">
+            <span class="lang-en">Screens annotated for engineering handoff. No decision left undocumented.</span>
+            <span class="lang-vi">Màn hình được chú thích cho bàn giao kỹ thuật. Không một quyết định nào bị bỏ sót.</span>
+          </p>
+        </div>
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Libeara project/Admin Portal Mockup flow.png" alt="Admin portal hi-fi mockup flow with annotations" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Mockup flow — annotated and ready for handoff.</span>
+          <span class="lang-vi">Luồng bản dựng — chú thích đầy đủ, sẵn sàng bàn giao.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Admin final screens -->
+    <div class="container">
+      <div class="proj-img-block">
+        <div class="proj-row" style="margin-bottom: 2rem">
+          <span class="proj-row-label" style="position: static">
+            <span class="lang-en">Final screens</span>
+            <span class="lang-vi">Màn hình cuối cùng</span>
+          </span>
+          <p style="font-size: 0.95rem; color: var(--fg-muted); line-height: 1.7; max-width: 44ch;">
+            <span class="lang-en">Dense by necessity. Every table, every status badge, every action button placed with the understanding that the person using this is processing sensitive financial data all day.</span>
+            <span class="lang-vi">Dày đặc vì cần thiết. Mỗi bảng, mỗi nhãn trạng thái, mỗi nút hành động đều được đặt với sự hiểu biết rằng người dùng đang xử lý dữ liệu tài chính nhạy cảm cả ngày.</span>
+          </p>
+        </div>
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Libeara project/Admin portal.png" alt="Libeara admin portal final screens" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Admin portal — final screens.</span>
+          <span class="lang-vi">Admin portal — màn hình hoàn thiện.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- TAKEAWAY -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Takeaway</span>
+            <span class="lang-vi">Bài học rút ra</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Key Takeaways &amp;<br /><em>Impact.</em></span>
+              <span class="lang-vi">Bài học &amp;<br /><em>Tác động.</em></span>
+            </h2>
+            <div class="takeaway">
+              <p>
+                <strong><span class="lang-en">1. Clarity Through Blueprinting</span><span class="lang-vi">1. Sự rõ ràng qua Sơ đồ hóa</span></strong><br />
+                <span class="lang-en">Creating a comprehensive 0-to-1 blueprint proved that in Fintech, ambiguity is removed only when the underlying logic is airtight. The resulting documentation drastically reduced engineering handoff friction.</span>
+                <span class="lang-vi">Tạo ra một bản thiết kế toàn diện từ 0 đến 1 chứng minh rằng trong Fintech, sự mơ hồ chỉ được loại bỏ khi logic nền tảng hoàn toàn chặt chẽ. Tài liệu kết quả đã giảm đáng kể ma sát trong quá trình bàn giao kỹ thuật.</span>
+              </p>
+              <p>
+                <strong><span class="lang-en">2. System Constraints as Accelerators</span><span class="lang-vi">2. Ràng buộc Hệ thống là Động lực</span></strong><br />
+                <span class="lang-en">Leveraging Ant Design as a foundational constraint accelerated development, allowing me to focus on UX logic and compliance integration rather than reinventing UI components.</span>
+                <span class="lang-vi">Tận dụng Ant Design như một ràng buộc nền tảng đã đẩy nhanh quá trình phát triển, cho phép tôi tập trung vào logic UX và tích hợp tuân thủ thay vì phải tái tạo các thành phần UI.</span>
+              </p>
+              <p>
+                <strong><span class="lang-en">3. Cross-Functional Success</span><span class="lang-vi">3. Thành công Liên chức năng</span></strong><br />
+                <span class="lang-en">Continuous alignment with compliance and engineering ensured that regulatory requirements enhanced the user experience rather than degraded it. The final platform successfully balances high-level institutional security with modern Web3 accessibility.</span>
+                <span class="lang-vi">Sự phối hợp liên tục với bộ phận tuân thủ và kỹ thuật đảm bảo rằng các yêu cầu pháp lý nâng cao trải nghiệm người dùng thay vì làm suy giảm nó. Nền tảng hoàn thiện cân bằng thành công giữa bảo mật tổ chức cấp cao và khả năng tiếp cận Web3 hiện đại.</span>
+              </p>
+
+              <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <h3 style="font-family: var(--serif); font-size: 1.6rem; font-weight: 500; color: var(--fg); margin-bottom: 1rem;">
+                  <span class="lang-en">Next Steps</span>
+                  <span class="lang-vi">Bước tiếp theo</span>
+                </h3>
+                <ul style="list-style: disc; padding-left: 1.5rem; color: var(--fg-muted); line-height: 1.8; font-size: 1.05rem;">
+                  <li style="margin-bottom: 0.6rem">
+                    <span class="lang-en">Monitor funnel conversion rates for the unified onboarding path.</span>
+                    <span class="lang-vi">Theo dõi tỷ lệ chuyển đổi phễu cho luồng onboarding thống nhất.</span>
+                  </li>
+                  <li style="margin-bottom: 0.6rem">
+                    <span class="lang-en">Regularly review and refine the Admin Portal operational speed to adapt to new regulatory demands.</span>
+                    <span class="lang-vi">Thường xuyên xem xét và tinh chỉnh tốc độ vận hành Admin Portal để thích nghi với các yêu cầu pháp lý mới.</span>
+                  </li>
+                  <li>
+                    <span class="lang-en">Research future implementation of automated AI compliance checks to further reduce onboarding friction.</span>
+                    <span class="lang-vi">Nghiên cứu triển khai trong tương lai các kiểm tra tuân thủ AI tự động để tiếp tục giảm ma sát onboarding.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- MORE LIKE THIS -->
+    <div class="container">
+      <div class="proj-more">
+        <p class="proj-more-label">
+          <span class="lang-en">HOW ABOUT ANOTHER?</span>
+          <span class="lang-vi">Xem thêm dự án</span>
+        </p>
+        <div class="proj-more-grid">
+          <a href="project_heraxury.html" class="proj-more-card fade-up">
+            <div class="proj-more-img">
+              <img src="img/heraxury project/Heraxury Thumbnail 2.png" alt="Heraxury" />
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Website Design · 2024</span>
+                <span class="lang-vi">Thiết kế Website · 2024</span>
+              </span>
+              <span class="proj-more-name">Heraxury Fashion</span>
+            </div>
+          </a>
+
+          <a href="project_s1.html" class="proj-more-card fade-up" style="transition-delay: 0.08s">
+            <div class="proj-more-img">
+              <img src="img/small project 1/Project 1 Thumbnail.png" alt="Campaign Screen" />
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Mobile Design · 2023</span>
+                <span class="lang-vi">Thiết kế Mobile · 2023</span>
+              </span>
+              <span class="proj-more-name">
+                <span class="lang-en">Campaign Screen</span>
+                <span class="lang-vi">Màn hình Chiến dịch</span>
+              </span>
+            </div>
+          </a>
+
+          <a href="uiuxshowcase.html#work" class="proj-more-card proj-more-card--home fade-up" style="transition-delay: 0.16s">
+            <div class="proj-more-img proj-more-img--home">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Portfolio</span>
+                <span class="lang-vi">Danh mục</span>
+              </span>
+              <span class="proj-more-name">
+                <span class="lang-en">← All Work</span>
+                <span class="lang-vi">← Tất cả dự án</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
