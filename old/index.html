@@ -1,0 +1,250 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nguyen Quang Minh-UI/UX Designer based in Hanoi. I craft digital experiences that balance business goals with genuine human needs." />
+    <title>Minh Nguyen-UI/UX Designer</title>
+
+    <!--Strict Typography Pair-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+
+    <!--Styles-->
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      /* lang+theme bootstrap */ (function () {
+        var l = localStorage.getItem("lang");
+        if (l === "vi") document.documentElement.lang = "vi";
+        var t = localStorage.getItem("theme");
+        if (t === "dark") document.documentElement.dataset.theme = "dark";
+      })();
+    </script>
+  </head>
+  <body>
+    <!--”€”€ NAV ”€”€-->
+    <nav>
+      <a href="#" class="nav-logo">Minh Nguyen</a>
+      <ul class="nav-links">
+        <li><a href="#work" data-i18n="nav.work">Work</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <!--Language toggle-->
+        <button class="nav-btn" id="langBtn" aria-label="Switch language">
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2" />
+            <path d="M7 1c-2 2-2 8 0 12M7 1c2 2 2 8 0 12M1 7h12" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <span id="langLabel">VI</span>
+        </button>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <!--Theme toggle-->
+        <button class="nav-btn" id="themeBtn" aria-label="Switch theme">
+          <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!--”€”€ HERO ”€”€-->
+    <header class="hero">
+      <div class="container hero-content">
+        <h1 class="hero-headline fade-up">
+          <span id="heroBase" class="tw-static">
+            <span class="lang-en">I design things people</span>
+            <span class="lang-vi">TÃ´i thiáº¿t káº¿ sáº£n pháº©m mÃ  ngÆ°á»i dÃ¹ng</span>
+          </span>
+          <span class="tw-dynamic"> <em id="typewriterWord">love to use</em><span class="tw-cursor">|</span>. </span>
+        </h1>
+      </div>
+      <a href="#work" class="hero-bounce fade-up" id="heroCta" style="transition-delay: 0.15s">
+        <span>
+          <span class="lang-en">See my work</span>
+          <span class="lang-vi">Xem dá»± Ã¡n</span>
+        </span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </a>
+    </header>
+
+    <hr class="divider" />
+
+    <!--”€”€ SELECTED WORK ”€”€-->
+    <section class="works-section" id="work">
+      <div class="container">
+        <span class="section-title fade-up">
+          <span class="lang-en">Selected Work</span>
+          <span class="lang-vi">Má»™t sá»‘ dá»± Ã¡n Ä‘Ã£ lÃ m</span>
+        </span>
+
+        <div class="works-grid">
+          <!--Row 1: Feature Showcase (Full Width Centerpiece)-->
+          <a href="project_Project Delta.html" class="work-item feature-full fade-up">
+            <div class="work-image">
+              <img src="img/delta project/Project Delta Thumbnail.png?v=2" alt="Project Delta: Institutional Asset Portal" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3 class="work-title">
+                  <span class="lang-en">Project Delta</span>
+                  <span class="lang-vi">Project Delta</span>
+                </h3>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <!--Row 2: Symmetric Pair (50/50)-->
+          <a href="project_toptop.html" class="work-item half-width fade-up">
+            <div class="work-image">
+              <img src="img/Toptop project/Toptop thumbnail.png?v=2" alt="TopTop Social E-commerce" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3 class="work-title">
+                  <span class="lang-en">TopTop E-commerce</span>
+                  <span class="lang-vi">ThÆ°Æ¡ng máº¡i Ä‘iá»‡n tá»­ TopTop</span>
+                </h3>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a href="project_s1.html" class="work-item half-width fade-up">
+            <div class="work-image">
+              <img src="img/small project 1/Project 1 Thumbnail.png?v=2" alt="Game App Campaign Screen" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3 class="work-title">
+                  <span class="lang-en">Campaign Screen</span>
+                  <span class="lang-vi">Campaign Screen</span>
+                </h3>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <!--Row 3: Symmetric Pair (50/50)-->
+          <a href="project_automotives.html" class="work-item half-width fade-up">
+            <div class="work-image">
+              <img src="img/Automotives project/Automotives Thumbnail.png?v=2" alt="Automotives System Design" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3 class="work-title">
+                  <span class="lang-en">Automotives project</span>
+                  <span class="lang-vi">Há»‡ thá»‘ng Automotives</span>
+                </h3>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a href="project_heraxury.html" class="work-item half-width fade-up">
+            <div class="work-image">
+              <img src="img/heraxury project/Heraxury Thumbnail.png?v=2" alt="Lolita Fashion" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3 class="work-title">
+                  <span class="lang-en">Lolita Fashion</span>
+                  <span class="lang-vi">Thá»i trang Lolita</span>
+                </h3>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!--”€”€ ABOUT & CONTACT ”€”€-->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left fade-up">
+            <h2>
+              <span class="lang-en">Logic <em>&amp;</em> Visuals.</span>
+              <span class="lang-vi">Logic <em>&amp;</em> Visuals.</span>
+            </h2>
+          </div>
+          <div class="about-right fade-up" style="transition-delay: 0.1s">
+            <p>
+              <span class="lang-en">Mobile Design</span>
+              <span class="lang-vi">TÃ´i lÃ  Nguyá»…n Quang Minh, UI/UX Designer táº¡i HÃ  Ná»™i. TÃ´i chuyÃªn vá» sá»± giao thoa giá»¯a <strong>Logic &amp; HÃ¬nh áº£nh</strong>-biáº¿n nhá»¯ng váº¥n Ä‘á» phá»©c táº¡p thÃ nh nhá»¯ng tráº£i nghiá»‡m trá»±c quan, hoÃ n háº£o tá»«ng pixel.</span>
+            </p>
+            <p>
+              <span class="lang-en">Currently open to freelance projects and full-time opportunities. Let's build something meaningful together.</span>
+              <span class="lang-vi">Hiá»‡n Ä‘ang má»Ÿ cá»­a vá»›i cÃ¡c dá»± Ã¡n freelance vÃ  cÆ¡ há»™i toÃ n thá»i gian. HÃ£y cÃ¹ng nhau táº¡o ra Ä‘iá»u gÃ¬ Ä‘Ã³.</span>
+            </p>
+
+            <div style="margin-top: 1.5rem">
+              <a href="files/Nguyen Quang Minh's resume_April-2026.pdf" target="_blank" style="font-family: var(--sans); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: opacity 0.2s" onmouseover="this.style.opacity = '0.8'" onmouseout="this.style.opacity = '1'">
+                <span class="lang-en">Here's my resume!</span>
+                <span class="lang-vi">Thá»­ Ä‘á»c CV cá»§a tÃ´i nhÃ©!</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!--”€”€ FOOTER ”€”€-->
+
+    <!--Back to top-->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <!--Scripts-->
+    <script src="script.js"></script>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2025 Minh Nguyen. All rights reserved.</p>
+        <ul class="footer-links">
+          <li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=minh.nguyen.workmail01@gmail.com" target="_blank"> Email </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nq-minh-477401239/" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TopTop-E-commerce & Influencer platform. Case study by Nguyen Quang Minh." />
+    <title>TopTop-UI/UX Case Study | Minh Nguyen</title>
+
+    <script>
+      /* lang+theme bootstrap */ (function () {
+        var l = localStorage.getItem("lang");
+        if (l === "vi") document.documentElement.lang = "vi";
+        var t = localStorage.getItem("theme");
+        if (t === "dark") document.documentElement.dataset.theme = "dark";
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <!-- -- NAV -- -->
+    <nav>
+      <a href="index.html" class="nav-logo">Minh Nguyen</a>
+      <ul class="nav-links">
+        <li><a href="index.html#work" data-i18n="nav.work">Work</a></li>
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-btn" id="langBtn" aria-label="Switch language">
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2" />
+            <path d="M7 1c-2 2-2 8 0 12M7 1c2 2 2 8 0 12M1 7h12" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <span id="langLabel">VI</span>
+        </button>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <button class="nav-btn" id="themeBtn" aria-label="Switch theme">
+          <svg id="iconSun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg id="iconMoon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="proj-hero">
+      <div class="container">
+        <div class="proj-hero-inner">
+          <div class="proj-hero-left">
+            <a href="index.html#work" class="proj-back" style="margin-bottom: 2.5rem">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M12 7H2M7 12L2 7l5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="lang-en">All work</span>
+              <span class="lang-vi">Tất cả dự án</span>
+            </a>
+            <h1 class="proj-title">
+              <span class="lang-en">TopTop: Social<br />Commerce App</span>
+              <span class="lang-vi">TopTop:<br />Social Commerce</span>
+            </h1>
+
+            <div class="proj-meta">
+              <div>
+                <p class="proj-meta-label">Client</p>
+                <p class="proj-meta-value">Media-One (Internship)</p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Role</span>
+                  <span class="lang-vi">Vai trò</span>
+                </p>
+                <p class="proj-meta-value">Solo UI/UX Designer</p>
+              </div>
+              <div>
+                <p class="proj-meta-label">Scope</p>
+                <p class="proj-meta-value">
+                  <span class="lang-en">Influencer E-commerce</span>
+                  <span class="lang-vi">TMĐT cho người ảnh hưởng</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-hero-right">
+            <img src="img/Toptop project/Toptop thumbnail.png?v=2" alt="TopTop App Preview" class="fade-up" style="border-radius: 20px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5)" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- OVERVIEW -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Overview</span>
+            <span class="lang-vi">Tổng quan</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">From a Test to a <em>Maximum Score.</em></span>
+              <span class="lang-vi">Từ bài kiểm tra đến <em>Điểm số tối đa.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">I independently drafted the entire user flow, designed the structural MVP, and presented it to the company leads during my internship at Hanoi National University of Education. TopTop is designed to bridge the gap between social content and direct purchasing, optimized for the fast-paced world of influencers.</span>
+              <span class="lang-vi">Tôi đã độc lập phác thảo toàn bộ luồng người dùng, thiết kế cấu trúc MVP và thuyết trình trước các lãnh đạo công ty trong kỳ thực tập của mình. TopTop được thiết kế để xóa nhòa khoảng cách giữa nội dung mạng xã hội và mua sắm trực tiếp, được tối ưu hóa cho thế giới năng động của những người có sức ảnh hưởng.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLOW -->
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Toptop project/Flow.png?v=2" alt="TopTop User Flow Mapping" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Complete User Flow: From discovery to checkout.</span>
+          <span class="lang-vi">Luồng người dùng hoàn chỉnh: Từ khám phá đến thanh toán.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- SYSTEMS -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Systems</span>
+            <span class="lang-vi">Hệ thống</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Inspiration & <em>Structure.</em></span>
+              <span class="lang-vi">Cảm hứng & <em>Cấu trúc.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">Before jumping into the visual aesthetics, I established a robust component system inspired by contemporary e-commerce trends, heavily tailored for influencer-driven sales. A structured design system ensured the user interface remained consistent, allowing the platform to easily scale for seasonal campaigns without breaking the core shopping flow.</span>
+              <span class="lang-vi">Trước khi đi sâu vào tính thẩm mỹ trực quan, tôi đã thiết lập một hệ thống thành phần (component) mạnh mẽ lấy cảm hứng từ các xu hướng thương mại điện tử đương đại, được tinh chỉnh dành riêng cho mô hình bán hàng qua người ảnh hưởng. Hệ thống thiết kế có cấu trúc đảm bảo giao diện luôn nhất quán, cho phép dễ dàng mở rộng trong các chiến dịch mùa vụ mà không phá vỡ luồng mua sắm cốt lõi.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="two-up fade-up">
+          <div class="img-frame img-frame--light">
+            <img src="img/Toptop project/Assets 1.png?v=2" alt="Search and Shop Assets" />
+          </div>
+          <div class="img-frame img-frame--light">
+            <img src="img/Toptop project/Assets 2.png?v=2" alt="Events and Video Components" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- HIFI DESIGN -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Hifi Design</span>
+            <span class="lang-vi">Thiết kế Hifi</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Covering Every <em>Corner.</em></span>
+              <span class="lang-vi">Bao phủ Mọi <em>Góc độ.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">Every screen in the TopTop user journey was meticulously mapped out. From the storefront driven by influencer livestreams to the deep checkout flows, I created an interface where content and commerce intersect flawlessly. The design deliberately embraces a clean aesthetic, ensuring that the vibrant creator content always remains the primary focal point.</span>
+              <span class="lang-vi">Mọi màn hình trong hành trình người dùng TopTop đều được vạch ra tỉ mỉ. Từ giao diện cửa hàng được thúc đẩy bởi livestream đến các luồng thanh toán chuyên sâu, tôi đã tạo ra một giao diện nơi nội dung và thương mại giao thoa hoàn hảo. Thiết kế chủ ý tận dụng tính thẩm mỹ gọn gàng, đảm bảo rằng nội dung sáng tạo rực rỡ luôn luôn là tâm điểm chú ý chính.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Toptop project/Full Design All.png?v=2" alt="Complete TopTop Design Board" />
+        </div>
+        <div class="img-frame img-frame--light fade-up" style="margin-top: 2rem">
+          <img src="img/Toptop project/Full Design 1.png?v=2" alt="MVP Details and Interactions" />
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- INTERACTION -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Interaction</span>
+            <span class="lang-vi">Tương tác</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Hifi <em>Prototype.</em></span>
+              <span class="lang-vi">Bản nguyên mẫu <em>Hifi.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">Understanding that e-commerce thrives on micro-interactions, I developed a high-fidelity prototype that accurately simulated the final product feeling. The goal was to demonstrate how fluid the transition between casual browsing and focused purchasing would be.</span>
+              <span class="lang-vi">Hiểu rằng thương mại điện tử phụ thuộc rất nhiều vào các tương tác vi mô (micro-interactions), tôi đã phát triển một bản nguyên mẫu (prototype) độ trung thực cao mô phỏng chính xác trải nghiệm sản phẩm cuối cùng. Mục tiêu là cho thấy sự mượt mà trong quá trình chuyển đổi từ việc lướt xem giải trí sang thao tác mua hàng tập trung.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="fade-up" style="background: #000; border-radius: 24px; padding: 2rem; display: flex; justify-content: center">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 12px; width: 400px; height: 800px" src="https://www.figma.com/embed?embed_host=share&amp;url=https://www.figma.com/proto/24nhwOqluQUTosjdZZnRwH/TopTop?node-id=5-9&amp;viewport=648,1499,0.22&amp;t=lMxEj5KMjZADR0KU-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1293:43323&amp;page-id=0:1" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- MORE PROJECTS -->
+    <div class="container">
+      <div class="proj-more">
+        <p class="proj-more-label">
+          <span class="lang-en">HOW ABOUT ANOTHER?</span>
+          <span class="lang-vi">XEM THÊM DỰ ÁN KHÁC?</span>
+        </p>
+        <div class="proj-more-grid">
+          <a href="project_Project Delta.html" class="proj-more-card fade-up">
+            <div class="proj-more-img">
+              <img src="img/delta project/Project Delta Thumbnail.png?v=2" alt="Project Delta" />
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Fintech</span>
+                <span class="lang-vi">Tài chính</span>
+              </span>
+              <span class="proj-more-name">Project Delta Portal</span>
+            </div>
+          </a>
+
+          <a href="project_automotives.html" class="proj-more-card fade-up" style="transition-delay: 0.08s">
+            <div class="proj-more-img">
+              <img src="img/Automotives project/Automotives Thumbnail.png?v=2" alt="Automotives" />
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">B2B Design</span>
+                <span class="lang-vi">Thiết kế B2B</span>
+              </span>
+              <span class="proj-more-name">Automotive B2B</span>
+            </div>
+          </a>
+
+          <a href="index.html#work" class="proj-more-card proj-more-card--home fade-up" style="transition-delay: 0.16s">
+            <div class="proj-more-img proj-more-img--home">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Portfolio</span>
+                <span class="lang-vi">Danh mục</span>
+              </span>
+              <span class="proj-more-name">
+                <span class="lang-en"><- All Work</span>
+                <span class="lang-vi"><- Tất cả dự án</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2025 Minh Nguyen. All rights reserved.</p>
+        <ul class="footer-links">
+          <li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=minh.nguyen.workmail01@gmail.com" target="_blank"> Email </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nq-minh-477401239/" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

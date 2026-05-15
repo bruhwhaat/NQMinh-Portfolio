@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Automotives Case Study-Architecting B2B procurement systems for a massive enterprise deal. UI/UX design by Nguyen Quang Minh." />
+    <title>Automotive B2B-UI/UX Case Study | Minh Nguyen</title>
+
+    <script>
+      /* lang+theme bootstrap */ (function () {
+        var l = localStorage.getItem("lang");
+        if (l === "vi") document.documentElement.lang = "vi";
+        var t = localStorage.getItem("theme");
+        if (t === "dark") document.documentElement.dataset.theme = "dark";
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <!-- -- NAV -- -->
+    <nav>
+      <a href="index.html" class="nav-logo">Minh Nguyen</a>
+      <ul class="nav-links">
+        <li><a href="index.html#work" data-i18n="nav.work">Work</a></li>
+        <li>
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <button class="nav-btn" id="langBtn" aria-label="Switch language">
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2" />
+            <path d="M7 1c-2 2-2 8 0 12M7 1c2 2 2 8 0 12M1 7h12" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <span id="langLabel">VI</span>
+        </button>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <button class="nav-btn" id="themeBtn" aria-label="Switch theme">
+          <svg id="iconSun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg id="iconMoon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section class="proj-hero">
+      <div class="container">
+        <div class="proj-hero-inner">
+          <div class="proj-hero-left">
+            <a href="index.html#work" class="proj-back" style="margin-bottom: 2.5rem">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M12 7H2M7 12L2 7l5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              All work
+            </a>
+
+            <h1 class="proj-title">
+              <span class="lang-en">Automotive B2B<br />Procurement</span>
+              <span class="lang-vi">Hệ thống B2B<br />Ngành Ô tô</span>
+            </h1>
+
+            <div class="proj-meta">
+              <div>
+                <p class="proj-meta-label">Client</p>
+                <p class="proj-meta-value">
+                  <span class="lang-en">The Automotives Client</span>
+                  <span class="lang-vi">Khách hàng ngành Ô tô</span>
+                </p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Role</span>
+                  <span class="lang-vi">Vai trò</span>
+                </p>
+                <p class="proj-meta-value">
+                  <span class="lang-en">Presales UI/UX Design</span>
+                  <span class="lang-vi">Thiết kế UI/UX Tiền dự án</span>
+                </p>
+              </div>
+              <div>
+                <p class="proj-meta-label">Scope</p>
+                <p class="proj-meta-value">
+                  <span class="lang-en">B2B Procurement</span>
+                  <span class="lang-vi">Mua sắm B2B</span>
+                </p>
+              </div>
+              <div>
+                <p class="proj-meta-label">
+                  <span class="lang-en">Tools</span>
+                  <span class="lang-vi">Công cụ</span>
+                </p>
+                <p class="proj-meta-value">Figma</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-hero-right">
+            <div class="hero-image-wrap fade-up">
+              <img src="img/Automotives project/Automotives Thumbnail.png?v=2" alt="Automotive B2B Case Study Preview" style="width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- SECTION 1: THE BRIEF -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">The Brief</span>
+            <span class="lang-vi">Tóm tắt</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Winning a massive enterprise deal.</span>
+              <span class="lang-vi">Chinh phục hợp đồng doanh nghiệp lớn.</span>
+            </h2>
+            <p>
+              <span class="lang-en">Winning a massive enterprise deal requires more than just a slick UI; it requires proving that you understand the client's deepest operational pains. The Automotives Client needed a robust system to handle thousands of complex Purchase Orders (POs) and PO Lines daily. Our mission was to build a web demo so convincing and intuitive that it would secure the presales contract.</span>
+              <span class="lang-vi">Chiến thắng một thương vụ doanh nghiệp lớn đòi hỏi nhiều hơn là một giao diện bóng bẩy; nó đòi hỏi việc chứng minh rằng bạn hiểu rõ những khó khăn vận hành sâu sắc nhất của khách hàng. Khách hàng Ô tô cần một hệ thống mạnh mẽ để xử lý hàng nghìn Đơn mua hàng (PO) và các dòng PO mỗi ngày. Nhiệm vụ của chúng tôi là xây dựng một bản demo web thuyết phục và trực quan đến mức có thể chốt được hợp đồng đấu thầu.</span>
+            </p>
+            <p>
+              <span class="lang-en">This wasn't a solo mission. I was part of a large, dynamic team, and the success of this product relied entirely on our ability to sync perfectly.</span>
+              <span class="lang-vi">Đây không phải là một nhiệm vụ đơn độc. Tôi là một phần của một đội ngũ lớn, năng động, và thành công của sản phẩm này hoàn toàn phụ thuộc vào khả năng phối hợp hoàn hảo của chúng tôi.</span>
+            </p>
+
+            <div class="state-pills" style="margin-top: 2.5rem">
+              <span class="pill pill-blue">Enterprise B2B</span>
+              <span class="pill pill-amber">Presales Strategy</span>
+              <span class="pill pill-muted">System Logic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- SECTION 2: MAPPING THE MAZE -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Architecture</span>
+            <span class="lang-vi">Kiến trúc</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Guided by Experience,<br /><em>Driven by Logic.</em></span>
+              <span class="lang-vi">Dẫn dắt bởi Kinh nghiệm,<br /><em>Thúc đẩy từ Logic.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">Enterprise procurement is an unforgiving maze of business rules. I couldn't just jump into Figma. Under the invaluable guidance of my Senior Designer, I learned to strategically plan and dissect enterprise-level complexity before drawing a single wireframe.</span>
+              <span class="lang-vi">Mua sắm doanh nghiệp là một mê cung không khoan nhượng của các quy tắc kinh doanh. Tôi không thể chỉ nhảy vào Figma. Dưới sự hướng dẫn sát sao và vô giá của Senior Designer, tôi đã học được cách lập kế hoạch chiến lược và giải phẫu sự phức tạp ở cấp độ doanh nghiệp trước khi vẽ một khung xương (wireframe) duy nhất.</span>
+            </p>
+            <p>
+              <span class="lang-en">I sat shoulder-to-shoulder with our Business Analysts (BAs), untangling the dense web of PO lifecycles, cancellation flows, and user permissions. We mapped out exactly what happens when an API call is rejected or a supplier alters a confirmed order. Understanding this raw logic was the foundation of everything that followed.</span>
+              <span class="lang-vi">Tôi đã làm việc sát cánh cùng các Chuyên viên Phân tích Nghiệp vụ (BA), gỡ rối mạng lưới dày đặc của vòng đời PO, quy trình hủy bỏ và quyền hạn người dùng. Chúng tôi đã lập bản đồ chính xác những gì xảy ra khi một lệnh gọi API bị từ chối hoặc một nhà cung cấp thay đổi một đơn hàng đã xác nhận. Hiểu rõ logic thô này là nền tảng của mọi thứ diễn ra sau đó.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="img-frame img-frame--light fade-up">
+          <img src="img/Automotives project/Flow 1.png?v=2" alt="Business logic and flow mapping" />
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Mapping the complex PO lifecycle.</span>
+          <span class="lang-vi">Lập bản đồ vòng đời PO phức tạp.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- SECTION 3: THE COMMAND CENTER -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Interface</span>
+            <span class="lang-vi">Giao diện</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">The Dual-Layered <em>Command Center.</em></span>
+              <span class="lang-vi">Trung tâm Điều khiển <em>Đa tầng.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">Most B2B software feels like a spreadsheet that gave up on life. We wanted to change that entirely. To handle the sheer volume of daily transactions, I designed both the PO Workbench and the PO Lines Workbench to act as a cohesive, dual-layered command center.</span>
+              <span class="lang-vi">Hầu hết các phần mềm B2B mang lại cảm giác như một bảng tính khô khan. Chúng tôi muốn thay đổi hoàn toàn điều đó. Để xử lý khối lượng giao dịch khổng lồ hàng ngày, tôi đã thiết kế cả PO Workbench và PO Lines Workbench để hoạt động như một trung tâm điều khiển đa tầng, gắn kết.</span>
+            </p>
+            <p>
+              <span class="lang-en">Instead of overwhelming the user with a flat, endless wall of raw data, we separated the macro and the micro. The PO Workbench gives a high-level overview of entire orders, while the PO Lines Workbench allows users to drill down into the granular, item-by-item details. By introducing a robust, slide-out filtering system and color-coded status pills (Draft, Held, Approved, Sent), users no longer have to blindly search for bottlenecks. The interface visually guides them, allowing them to seamlessly navigate from a massive parent order straight to a single problematic part.</span>
+              <span class="lang-vi">Thay vì làm người dùng choáng ngợp với một "bức tường" dữ liệu thô vô tận, chúng tôi đã tách biệt giữa góc nhìn vĩ mô và vi mô. PO Workbench cung cấp cái nhìn tổng quan cấp cao về toàn bộ đơn hàng, trong khi PO Lines Workbench cho phép người dùng đi sâu vào các chi tiết granular, từng dòng hàng một. Bằng cách giới thiệu hệ thống lọc trượt mạnh mẽ và các thẻ trạng thái mã hóa màu (Nháp, Tạm giữ, Đã duyệt, Đã gửi), người dùng không còn phải tìm kiếm các điểm nghẽn một cách mù quáng. Giao diện hướng dẫn họ bằng hình ảnh, cho phép họ điều hướng liền mạch từ một đơn hàng cha khổng lồ thẳng đến một bộ phận gặp lỗi.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="grid-2-1 fade-up">
+          <div class="img-stack">
+            <div class="img-frame img-frame--light">
+              <img src="img/Automotives project/PO Workbench.png?v=2" alt="PO Workbench interface" />
+            </div>
+            <div class="img-frame img-frame--light">
+              <img src="img/Automotives project/PO Lines Workbench.png?v=2" alt="PO Lines Workbench detailed view" />
+            </div>
+          </div>
+          <div class="img-frame img-frame--light">
+            <img src="img/Automotives project/Filter drawer.png" alt="Filter drawer design" />
+          </div>
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">The definitive command center with advanced filtering.</span>
+          <span class="lang-vi">Tổng quan Workbench và bộ lọc nâng cao.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- SECTION 4: DESIGN & CODE -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Process</span>
+            <span class="lang-vi">Quy trình</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Iterating with the <em>Devs.</em></span>
+              <span class="lang-vi">Cải tiến cùng Đội ngũ <em>Kỹ thuật.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">Because the goal was a flawless presales web demo, static screens wouldn't cut it. I collaborated heavily with our development team, speaking their language to ensure the transition from Figma to code was seamless.</span>
+              <span class="lang-vi">Vì mục tiêu là một bản demo web đấu thầu hoàn hảo, các màn hình tĩnh là không đủ. Tôi đã hợp tác chặt chẽ với đội ngũ lập trình, sử dụng ngôn ngữ của họ để đảm bảo quá trình chuyển đổi từ Figma sang code diễn ra mượt mà.</span>
+            </p>
+            <p>
+              <span class="lang-en">Together, we built the Multi-Step PO Creation Wizard. We broke down a highly intimidating data-entry task into three digestible, progressive steps: The Header, The Lines, and The Summary. Working closely with the devs meant we could rapid-prototype interactions, ensuring the demo felt incredibly real, fast, and robust.</span>
+              <span class="lang-vi">Cùng nhau, chúng tôi đã xây dựng Trình hướng dẫn tạo PO nhiều bước (Multi-Step PO Creation Wizard). Chúng tôi đã chia nhỏ một nhiệm vụ nhập dữ liệu cực kỳ đáng sợ thành ba bước dễ tiếp cận: Tiêu đề, Các dòng hàng và Bản tóm tắt. Làm việc sát sao với dev giúp chúng tôi có thể dựng prototype tương tác nhanh, đảm bảo bản demo mang lại cảm giác cực kỳ thực tế, nhanh chóng và mạnh mẽ.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-img-block" style="padding-top: 0">
+        <div class="three-up fade-up">
+          <div class="img-frame img-frame--light">
+            <img src="img/Automotives project/PO Detail_Header.png?v=2" />
+          </div>
+          <div class="img-frame img-frame--light">
+            <img src="img/Automotives project/PO Detail_PO Lines.png?v=2" />
+          </div>
+          <div class="img-frame img-frame--light">
+            <img src="img/Automotives project/PO Detail_Summary.png?v=2" />
+          </div>
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Multi-step Wizard: Header, Lines, and final Summary.</span>
+          <span class="lang-vi">Wizard nhiều bước: Tiêu đề, Dòng hàng và Tóm tắt cuối cùng.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- SECTION 5: UNHAPPY PATH -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Edge Cases</span>
+            <span class="lang-vi">Ngoại lệ</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Handling the <em>Real World.</em></span>
+              <span class="lang-vi">Xử lý <em>Thực tế.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">It's easy to design the "happy path." But in the automotive supply chain, mistakes happen constantly. What do you do when a supplier ships 45 items instead of 80?</span>
+              <span class="lang-vi">Thật dễ dàng để thiết kế cho "kịch bản thuận lợi". Nhưng trong chuỗi cung ứng ô tô, sai sót xảy ra thường xuyên. Bạn sẽ làm gì khi một nhà cung cấp giao 45 mặt hàng thay vì 80?</span>
+            </p>
+            <p>
+              <span class="lang-en">Instead of throwing a generic, frustrating red error message for an "Oversupplied" API conflict, we built dedicated Discrepancy Resolution flows. The UI gracefully guides the user to resolve the conflict right down to the specific PO Line, turning a system error into an actionable task.</span>
+              <span class="lang-vi">Thay vì đưa ra một thông báo lỗi màu đỏ hung hăng và chung chung cho một xung đột API "Cung cấp quá mức", chúng tôi đã xây dựng các quy trình Giải quyết sai biệt chuyên biệt. Giao diện sẽ dẫn dắt người dùng giải quyết xung đột ngay tại từng dòng PO cụ thể, biến một lỗi hệ thống thành một nhiệm vụ có thể xử lý.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-img-block" style="padding-top: 0; text-align: center">
+        <div class="two-up fade-up">
+          <div class="img-frame img-frame--light">
+            <img src="img/Automotives project/Order Confirmation.png?v=2" />
+          </div>
+          <div class="img-frame img-frame--light">
+            <img src="img/Automotives project/Confirmation.png?v=2" />
+          </div>
+        </div>
+        <p class="proj-img-caption">
+          <span class="lang-en">Error handling and resolution flows.</span>
+          <span class="lang-vi">Quy trình xử lý lỗi và giải quyết.</span>
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- SECTION 6: IMPACT -->
+    <div class="container">
+      <div class="proj-section">
+        <div class="proj-row">
+          <span class="proj-row-label">
+            <span class="lang-en">Impact</span>
+            <span class="lang-vi">Kết quả</span>
+          </span>
+          <div class="proj-body fade-up">
+            <h2>
+              <span class="lang-en">Securing the <em>Deal.</em></span>
+              <span class="lang-vi">Chốt hợp đồng <em>Thành công.</em></span>
+            </h2>
+            <p>
+              <span class="lang-en">The result of this intense collaboration, rigorous logic mapping, and rapid development iteration was a high-fidelity demo that spoke directly to the Automotives Client's pain points. We didn't just show them a software interface; we showed them a solution to their daily chaos. The demo was a massive success, and we won the presales.</span>
+              <span class="lang-vi">Kết quả của sự hợp tác cường độ cao, lập bản đồ logic nghiêm ngặt và cải tiến nhanh chóng này là một bản demo có độ trung thực cao, đánh trúng vào những khó khăn của Khách hàng Ô tô. Chúng tôi không chỉ cho họ thấy một giao diện phần mềm; chúng tôi cho họ thấy một giải pháp cho sự hỗn loạn hàng ngày của họ. Bản demo đã thành công vang dội và chúng tôi đã giành được dự án.</span>
+            </p>
+
+            <div class="takeaway fade-up">
+              <strong style="display: block; margin-bottom: 1rem">
+                <span class="lang-en">Key Takeaways</span>
+                <span class="lang-vi">Bài học chính</span>
+              </strong>
+              <div class="role-list">
+                <div class="role-item">
+                  <span class="lang-en"><strong>Mentorship is a Catalyst:</strong> The strategic planning guidance from my senior mentor completely shifted my approach from just "making UI" to "architecting solutions."</span>
+                  <span class="lang-vi"><strong>Sự hướng dẫn là Chất xúc tác:</strong> Sự dẫn dắt về lập kế hoạch chiến lược từ mentor đã thay đổi hoàn toàn cách tiếp cận của tôi từ việc chỉ "làm UI" sang "kiến tạo giải pháp".</span>
+                </div>
+                <div class="role-item">
+                  <span class="lang-en"><strong>Collaboration is Key:</strong> Smooth coordination between Design, BA, and Dev is the only way to build effective enterprise software.</span>
+                  <span class="lang-vi"><strong>Sự phối hợp là then chốt:</strong> Sự nhịp nhàng giữa Thiết kế, BA và Dev là cách duy nhất để xây dựng phần mềm doanh nghiệp thực sự hiệu quả.</span>
+                </div>
+                <div class="role-item">
+                  <span class="lang-en"><strong>Embrace the Edge Cases:</strong> True UX value in B2B systems lies in how elegantly you design the solutions for when things go wrong.</span>
+                  <span class="lang-vi"><strong>Chấp nhận các ngoại lệ:</strong> Giá trị UX thực sự trong hệ thống B2B nằm ở cách bạn thiết kế các giải pháp tinh tế khi có sự cố xảy ra.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- HOW ABOUT ANOTHER? -->
+    <div class="container">
+      <div class="proj-more">
+        <p class="proj-more-label">
+          <span class="lang-en">HOW ABOUT ANOTHER?</span>
+          <span class="lang-vi">XEM THÊM DỰ ÁN KHÁC?</span>
+        </p>
+        <div class="proj-more-grid">
+          <a href="project_Project Delta.html" class="proj-more-card fade-up">
+            <div class="proj-more-img">
+              <img src="img/delta project/Project Delta Thumbnail.png?v=2" alt="Project Delta" />
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Mobile Design</span>
+                <span class="lang-vi">Thiết kế Mobile</span>
+              </span>
+              <span class="proj-more-name">Project Delta Portal</span>
+            </div>
+          </a>
+
+          <a href="project_toptop.html" class="proj-more-card fade-up" style="transition-delay: 0.08s">
+            <div class="proj-more-img">
+              <img src="img/Toptop project/Toptop thumbnail.png?v=2" alt="TopTop" />
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Mobile Design</span>
+                <span class="lang-vi">Ứng dụng di động</span>
+              </span>
+              <span class="proj-more-name">TopTop Social E-commerce</span>
+            </div>
+          </a>
+
+          <a href="index.html#work" class="proj-more-card proj-more-card--home fade-up" style="transition-delay: 0.16s">
+            <div class="proj-more-img proj-more-img--home">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <div class="proj-more-meta">
+              <span class="proj-more-tag">
+                <span class="lang-en">Portfolio</span>
+                <span class="lang-vi">Danh mục</span>
+              </span>
+              <span class="proj-more-name">
+                <span class="lang-en"><- All Work</span>
+                <span class="lang-vi"><- Tất cả dự án</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2025 Minh Nguyen. All rights reserved.</p>
+        <ul class="footer-links">
+          <li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=minh.nguyen.workmail01@gmail.com" target="_blank"> Email </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nq-minh-477401239/" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

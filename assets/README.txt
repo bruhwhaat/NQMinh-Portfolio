@@ -1,5 +1,5 @@
-<!-- Placeholder notes for assets -->
-<!-- Save your project videos and images in this folder -->
+<!--Placeholder notes for assets-->
+<!--Save your project videos and images in this folder-->
 
 # Assets Folder
 

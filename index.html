@@ -3,25 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Nguyen Quang Minh - UI/UX Designer based in Hanoi. I craft digital experiences that balance business goals with genuine human needs."
-    />
-    <title>Minh Nguyen - UI/UX Designer</title>
+    <meta name="description" content="Nguyen Quang Minh-UI/UX Designer based in Hanoi. I craft digital experiences that balance business goals with genuine human needs." />
+    <title>Minh Nguyen-UI/UX Designer</title>
 
-    <!-- Strict Typography Pair -->
+    <script>
+      /* lang+theme bootstrap */ (function () {
+        var l = localStorage.getItem("lang");
+        if (l === "vi") document.documentElement.lang = "vi";
+        var t = localStorage.getItem("theme");
+        if (t === "dark") document.documentElement.dataset.theme = "dark";
+      })();
+    </script>
+
+    <!-- --------------------------------------------------------------------------- Strict Typography Pair --------------------------------------------------------------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&amp;family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
 
-    <!-- Styles -->
+    <!-- --------------------------------------------------------------------------- Styles --------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- ── NAV ── -->
+    <!-- --------------------------------------------------------------------------- ── NAV ── --------------------------------------------------------------------------- -->
     <nav>
       <a href="#" class="nav-logo">Minh Nguyen</a>
       <ul class="nav-links">
@@ -29,87 +32,43 @@
         <li><a href="#about" data-i18n="nav.about">About</a></li>
       </ul>
       <div class="nav-controls">
-        <!-- Language toggle -->
         <button class="nav-btn" id="langBtn" aria-label="Switch language">
           <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <circle
-              cx="7"
-              cy="7"
-              r="6"
-              stroke="currentColor"
-              stroke-width="1.2"
-            />
-            <path
-              d="M7 1c-2 2-2 8 0 12M7 1c2 2 2 8 0 12M1 7h12"
-              stroke="currentColor"
-              stroke-width="1.2"
-            />
+            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2" />
+            <path d="M7 1c-2 2-2 8 0 12M7 1c2 2 2 8 0 12M1 7h12" stroke="currentColor" stroke-width="1.2" />
           </svg>
           <span id="langLabel">VI</span>
         </button>
         <div class="nav-divider" aria-hidden="true"></div>
-        <!-- Theme toggle -->
         <button class="nav-btn" id="themeBtn" aria-label="Switch theme">
-          <svg
-            id="iconSun"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
+          <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
-            />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
           </svg>
-          <svg
-            id="iconMoon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
+          <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
           </svg>
         </button>
       </div>
     </nav>
 
-    <!-- ── HERO ── -->
+    <!-- --------------------------------------------------------------------------- ── HERO ── --------------------------------------------------------------------------- -->
     <header class="hero">
       <div class="container hero-content">
         <h1 class="hero-headline fade-up">
-          <span id="heroBase" class="tw-static">I design things people</span>
-          <span class="tw-dynamic"
-            ><em id="typewriterWord">love to use</em
-            ><span class="tw-cursor">|</span>.</span
-          >
+          <span id="heroBase" class="tw-static">
+            <span class="lang-en">I design things people</span>
+            <span class="lang-vi">Tôi thiết kế những sản phẩm</span>
+          </span>
+          <span class="tw-dynamic"> <em id="typewriterWord">love to use</em><span class="tw-cursor">|</span>. </span>
         </h1>
       </div>
-      <a
-        href="#work"
-        class="hero-bounce fade-up"
-        id="heroCta"
-        style="transition-delay: 0.15s"
-      >
-        <span>See my work</span>
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
+      <a href="#work" class="hero-bounce fade-up" id="heroCta" style="transition-delay: 0.15s">
+        <span>
+          <span class="lang-en">See my work</span>
+          <span class="lang-vi">Xem các dự án</span>
+        </span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
       </a>
@@ -117,121 +76,139 @@
 
     <hr class="divider" />
 
-    <!-- ── SELECTED WORK ── -->
+    <!-- --------------------------------------------------------------------------- -- SELECTED WORK -- --------------------------------------------------------------------------- -->
     <section class="works-section" id="work">
       <div class="container">
-        <span class="section-title fade-up" data-i18n="work.label"
-          >Selected Work - 2022–2025</span
-        >
+        <span class="section-title fade-up">
+          <span class="lang-en">Selected Work - 2022-2025</span>
+          <span class="lang-vi">Dự án tiêu biểu</span>
+        </span>
 
         <div class="works-grid">
-          <!-- Project 1: Libeara (Large) -->
-          <a href="project_libeara.html" class="work-item large fade-up">
+          <a href="project_Project Delta.html" class="work-item feature-full fade-up">
             <div class="work-image">
-              <img
-                src="img/Libeara project/Libeara Thumbnail.png"
-                alt="Libeara Admin Portal"
-                loading="lazy"
-              />
+              <img src="img/delta project/Project Delta Thumbnail.png?v=2" alt="Project Delta" loading="lazy" />
             </div>
             <div class="work-meta">
               <div>
-                <h3 class="work-title" data-i18n="p1.title">
-                  Libeara Design System
+                <h3 class="work-title">
+                  <span class="lang-en">Project Delta</span>
+                  <span class="lang-vi">Dự án Delta</span>
                 </h3>
-                <span class="work-tag" data-i18n="p1.tag"
-                  >Product Design - 2024</span
-                >
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Ứng dụng Di động</span>
+                </span>
               </div>
             </div>
           </a>
 
-          <!-- Project 2: Heraxury (Small Offset) -->
-          <a href="project_heraxury.html" class="work-item small fade-up">
-            <div class="work-image" style="background: #111">
-              <img
-                src="img/heraxury project/Heraxury Thumbnail.png"
-                alt="Heraxury E-commerce"
-                loading="lazy"
-              />
-            </div>
-            <div class="work-meta">
-              <div>
-                <h3 class="work-title" data-i18n="p2.title">Heraxury Fashion</h3>
-                <span class="work-tag" data-i18n="p2.tag"
-                  >Website Design - 2024</span
-                >
-              </div>
-            </div>
-          </a>
-
-          <!-- Project 3: Campaign Screen (Medium Left) -->
-          <a href="project_s1.html" class="work-item medium-left fade-up">
+          <a href="project_automotives.html" class="work-item half-width fade-up">
             <div class="work-image">
-              <img
-                src="img/small project 1/Project 1 Thumbnail.png"
-                alt="Game App Campaign Screen"
-                loading="lazy"
-              />
+              <img src="img/Automotives project/Automotives Thumbnail.png?v=2" alt="Automotives System Design" loading="lazy" />
             </div>
             <div class="work-meta">
               <div>
-                <h3 class="work-title" data-i18n="p3.title">Campaign Screen</h3>
-                <span class="work-tag" data-i18n="p3.tag">Mobile Design</span>
+                <h3 class="work-title">
+                  <span class="lang-en">Automotive B2B</span>
+                  <span class="lang-vi">Automotive B2B</span>
+                </h3>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
               </div>
             </div>
           </a>
 
-          <!-- Project 4: Coming Soon (Medium Right) -->
-          <!-- <a href="#" class="work-item medium-right fade-up">
-            <div class="work-image" style="background: #ddd">
-              <img
-                src="https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=900&q=80"
-                alt="Upcoming Project"
-                loading="lazy"
-              />
+          <a href="project_toptop.html" class="work-item half-width fade-up">
+            <div class="work-image">
+              <img src="img/Toptop project/Toptop thumbnail.png?v=2" alt="TopTop Social E-commerce" loading="lazy" />
             </div>
             <div class="work-meta">
               <div>
-                <h3 class="work-title" data-i18n="p4.title">
-                  Creative Archive
+                <h3 class="work-title">
+                  <span class="lang-en">TopTop Commerce</span>
+                  <span class="lang-vi">Social Commerce</span>
                 </h3>
-                <span class="work-tag" data-i18n="p4.tag">Coming soon</span>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
               </div>
             </div>
-          </a> -->
+          </a>
+
+          <a href="project_s1.html" class="work-item half-width fade-up">
+            <div class="work-image">
+              <img src="img/small project 1/Project 1 Thumbnail.png?v=2" alt="Game App Campaign Screen" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3 class="work-title">
+                  <span class="lang-en">Campaign Screen</span>
+                  <span class="lang-vi">Campaign Screen</span>
+                </h3>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a href="project_heraxury.html" class="work-item half-width fade-up">
+            <div class="work-image">
+              <img src="img/heraxury project/Heraxury Thumbnail.png?v=2" alt="Lolita Fashion" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3 class="work-title">
+                  <span class="lang-en">Lolita Fashion</span>
+                  <span class="lang-vi">Thời trang Lolita</span>
+                </h3>
+                <span class="work-tag">
+                  <span class="lang-en">Mobile Design</span>
+                  <span class="lang-vi">Thiết kế Mobile</span>
+                </span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
     <hr class="divider" />
 
-    <!-- ── ABOUT & CONTACT ── -->
+    <!-- --------------------------------------------------------------------------- ── ABOUT & CONTACT ── --------------------------------------------------------------------------- -->
     <section class="about-section" id="about">
       <div class="container">
         <div class="about-grid">
           <div class="about-left fade-up">
-            <h2 data-i18n="about.heading">Logic <em>&amp;</em> Visuals.</h2>
+            <h2>
+              <span class="lang-en">Logic <em>&amp;</em> Visuals.</span>
+              <span class="lang-vi">Logic <em>&amp;</em> Visuals.</span>
+            </h2>
           </div>
           <div class="about-right fade-up" style="transition-delay: 0.1s">
-            <p data-i18n="about.p1">
-              I'm Nguyen Quang Minh, a UI/UX Designer based in Hanoi, Vietnam. I
-              specialise in the intersection of
-              <strong>Logic &amp; Visuals</strong> - turning complex problems
-              into intuitive, pixel-perfect experiences that users genuinely
-              enjoy.
+            <p>
+              <span class="lang-en">I'm Nguyen Quang Minh, a UI/UX Designer based in Hanoi, Vietnam. I specialise in the intersection of Logic & Visuals, turning complex problems into intuitive, pixel-perfect experiences that users genuinely enjoy to use.</span>
+              <span class="lang-vi">Tôi là Nguyễn Quang Minh, một nhà thiết kế UI/UX tại Hà Nội. Tôi chuyên sâu vào sự giao thoa giữa Logic & Visuals, biến những bài toán phức tạp thành những trải nghiệm trực quan, hoàn hảo tới từng pixel mà người dùng thực sự yêu thích.</span>
             </p>
-            <p data-i18n="about.p2">
-              Currently open to freelance projects and full-time opportunities.
-              Let's build something meaningful together.
+            <p>
+              <span class="lang-en">Currently open to freelance projects and full-time opportunities. Let's build something meaningful together.</span>
+              <span class="lang-vi">Hiện đang tìm kiếm các dự án freelance và cơ hội làm việc toàn thời gian. Hãy cùng nhau tạo nên những điều ý nghĩa.</span>
             </p>
 
-            <div class="skills-list">
-              <span class="skill-tag">UX Research</span>
-              <span class="skill-tag">Interaction Design</span>
-              <span class="skill-tag">Figma</span>
-              <span class="skill-tag">Prototyping</span>
-              <span class="skill-tag">Design Systems</span>
+            <div style="margin-top: 1.5rem">
+              <a href="files/Nguyen Quang Minh's resume_April-2026.pdf" target="_blank" style="font-family: var(--sans); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: opacity 0.2s" onmouseover="this.style.opacity = '0.8'" onmouseout="this.style.opacity = '1'">
+                <span class="lang-en">HERE'S MY RESUME!</span>
+                <span class="lang-vi">XEM QUA CV CỦA TÔI!</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -240,41 +217,25 @@
 
     <hr class="divider" />
 
-    <!-- ── FOOTER ── -->
-    <footer>
-      <div class="container footer-inner">
-        <p class="footer-copy" data-i18n="footer.copy">
-          © 2025 Minh Nguyen. All rights reserved.
-        </p>
-        <ul class="footer-links">
-          <li><a href="mailto:minh.nguyen.workmail01@gmail.com">Email</a></li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/nq-minh-477401239/"
-              target="_blank"
-              rel="noopener"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
-    </footer>
-
-    <!-- Back to top -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 19V5M5 12l7-7 7 7" />
       </svg>
     </button>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
+    <footer>
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2025 Minh Nguyen. All rights reserved.</p>
+        <ul class="footer-links">
+          <li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=minh.nguyen.workmail01@gmail.com" target="_blank"> Email </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nq-minh-477401239/" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
