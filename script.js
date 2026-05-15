@@ -52,7 +52,7 @@ const i18n = {
 
     "hero.base": "Tôi thiết kế sản phẩm mà người dùng",
     "hero.cta": "Xem dự án",
-    "hero.words": ["thích dùng", "thấy hiệu quả", "tương tác dễ dàng"],
+    "hero.words": ["cảm thấy thích để dùng", "mang lại hiệu quả", "có tương tác dễ dàng"],
 
     "work.label": "Một số dự án đã làm",
 
